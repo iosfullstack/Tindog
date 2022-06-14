@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .chalk {
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        } */
+
+        body{
+            overflow-x: hidden;
+        }
+
+        
+        
+        .input-icons .links{
+            position: relative;
+            padding-left: 226px;
+            
+           
+        }
+         
+        .input-icons {
+            width: 100%;
+            margin-top: 7px;
+        }
+         
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+            float: left;
+        }
+         
+        .input-field {
+            width: 20%;
+            padding: 10px;
+            position: absolute;
+            border-radius: 10px;
+            border: none;
+            height: 50px;
+            box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);
+        }
+
+       
+
+       
+        ul li{
+            list-style:none;
+            font-weight: 700;
+            margin: 7px;
+        }
+
+       
+        .btn1{
+            background-color: aqua;
+            color: white;
+            border: none;
+            border-radius: 48px;
+            padding: 10px 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn2{
+            background-color: transparent;
+            color: aqua;
+            border: 2px solid aqua;
+            border-radius: 48px;
+            padding: 10px 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn3{
+            display: inline-block;
+            width: 75%;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            border-radius: 48px;
+            color: #fff;
+            margin-top: 21px;
+            font-size: 17px;
+            font-weight: 700;
+            background-color: aqua;
+            border: none;
+            margin-bottom: 100px;
+        }
+
+        .heading h1{
+            font-size: 50px;
+            font-weight: 700;
+            color: white;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .welcome h4{
+            font-family: 'Quicksand';
+            color: #ffffff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            opacity: 0.5;
+            font-size: 20px;
+            margin-top: 0px;
+        }
+
+        .heading1 h4{
+            font-family: 'Quicksand';
+            color: #919191;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 22px;
+            /* margin-top: -5px; */
+        }
+
+        .heading2 h1{
+            font-family: 'Quicksand';
+            color: #fc7f7f;
+            font-weight: 700;
+            letter-spacing: -3.5px;
+            font-size: 50px;
+        }
+
+        .prgh1{
+            font-family: 'Muli';
+            color: #566073;
+            font-weight: 600;
+            font-size: 19px;
+        }
+
+        a:link, a:visited, a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: aqua;
+        }
+        
+        .nav-item :hover{
+            border-bottom: 2px solid aqua;
+            color: aqua;
+        }
+
+        .lbl{
+            width: auto;
+            display: inline-block;
+            margin-top: 0;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .btn4{
+            color: #fff;
+
+            line-height: 1;
+            min-width: 270px;
+            height: 48px;
+            padding: 0 20px;
+            margin-top: 10px;
+            line-height: 48px;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+             border: none;
+             border-radius: 50px;
+            font-weight: 700;
+            font-size: 17px;
+            
+        }
+
+        .tick{
+            width: 30px;
+        }
+
+        .heading5{
+            color: white;
+        }
+
+
+      
+
+        
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container mb-lg-5 align-content-center justify-content-center flex-lg-wrap d-flex">
+            <h1>
+                <a href="#">
+                    <img src="./images/tindog_logo.png" alt="">
+                </a>
+            </h1>
+        </div>
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"></div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dog Breeds & Personalities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Behavior & Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutrition & Health Care</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+             
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container-fluid bg-primary">
+            <div class="container position-relative text-center">
+                <div class="img-fluid text-center">
+                    <img src="./images/Banner1-1.png" alt="">
+            
+                </div>
+                <div class="welcome">
+                    <div class="centered position-absolute fixed-top" style="margin-top: 75px;">
+                        <h4>FOR MODERN DOGS AND THEIR BEST FRIENDS!</h4>
+                    </div>
+    
+                    <div class="centered position-absolute fixed-top heading" style="margin-top: 120px;">
+                        <h1>Welcome to tindog</h1>
+                    </div>
+    
+                    <div class="btn position-absolute fixed-top pb-lg-5 " style="margin-top: 180px;">
+                        <button class="btn1" type="submit">All Blogs</button>
+                        <button class="btn2" type="submit">More Details</button>
+    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="text-center heading1">
+                <h4>Hi There,</h4>
+            </div>
+    
+            <div class=" container text-center text-justify heading2">
+                <h1>Welcome to our Family!</h1>
+                <div class="container w-50">
+                    <p class="text-center font-weight-bold prgh1">Here at Tindog we want to provide you with the best online information resources for dogs! We love our pups and we understand how important it is for you to keep your dog safe, happy, and healthy!</p>
+                </div>
+    
+            </div>
+
+        <div class="img-fluid" style= "margin-top:100px; height: 100%; width: 100%; background-image: url(./images/services-bg.jpg); background-position:center; background-repeat: no-repeat; background-size: cover;">
+          <div class="dab">
+            <div class="list-items1"> hshhshshshshshshs</div>
+            <div class="list-items2"> gsgsfsfssgssffsfsgssff</div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+        <div class = "container text-center text-justify" style="margin-top: 150px;" >
+            <h3 class="heading3">
+                OUR
+            </h3>
+
+            <p>
+                <h1 class="heading4"> Latest Blog Posts </h1>
+            </p>
+
+           <div class="container w-75 font-weight-light  ">
+            <p class="lead">
+                You’ll enjoy knowing our dedicated team will do whatever is needed to keep your pets happy, healthy and safe when you’re away from home.
+            </p>
+           </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100" style="border-radius: 15px; box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);">
+                    <img src="./images/katja1.webp" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                      <h5 class="card-title">UNCATEGORIZED</h5>
+                      <a href="http://">Ways To Make Your Dog Comfortable Alone In Your Home</a>
+                      <p class="card-text">Many dogs have become used to having their owners around 24/7 during the lockdown. Now that more people are going back to …
+                    </div>
+                    <div class="btn">
+                      <button class="btn3" type="submit">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" style="border-radius: 15px; box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);">
+                    <img src="./images/karsten2.webp" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                      <h5 class="card-title">DOG CARE, DOG LIFE</h5>
+                      <a href="http://">Can Dogs Eat Pineapple?</a>
+                      <p class="card-text">Do you like piña coladas? If you do, then you’re probably familiar with the tangy taste of pineapples (and perhaps even enjoy …</p>
+                    </div>
+                    <div class="btn">
+                        <button class="btn3" type="submit">Read More</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" style="border-radius: 15px; box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);">
+                    <img src="./images/neil3.webp" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <div class="card-body">
+                      <h5 class="card-title">DOG CARE, DOG LIFE</h5>
+                      <a href="http://">Does Pet Insurance Cover Parvo?</a>
+                      <p class="card-text">No one ever plans on their dog getting sick, but the fact is that dogs can and do get sick, sometimes very …</p>
+                    </div>
+                    <div class="btn">
+                        <button class="btn3" type="submit">Read More</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="container d-flex justify-content-around align-items-center" style="margin-top: 100px;">
+            <img src="./images/brand1.jpg" alt="">
+            <img src="./images/brand2.jpg" alt="">
+            <img src="./images/brand3.jpg" alt="">
+            <img src="./images/brand4.jpg" alt="">
+            <img src="./images/brand5.jpg" alt="">
+            <img src="./images/brand6.jpg" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid bg-danger mt-lg-5">
+            <div class="container d-flex justify-content-center align-items-center w-75">
+                <a href="http://"><img src="./images/pet1-small.jpg" alt=""></a>
+                <a href="http://"><img src="./images/pet2-small.jpg" alt=""></a>
+                <a href="http://"><img src="./images/pet3-small.jpg" alt=""></a>
+                <a href="http://"><img src="./images/pet4-small.jpg" alt=""></a>
+            </div>
+
+           <div class="container mt-lg-5">
+               <div class="row">
+                <div class="col-6 heading5">
+                    <h3>REACH OUT &</h3>
+
+                <h1>Connect With Us</h1>
+ 
+                 
+                 <p class="lead w-50">Stay up to date with everything we have to offer here at Tindog! By subscribing to our email you will be the first to know about all of our exclusive offers as well as all the dog lifestyle tips and tricks we can find!</p>
+ 
+                </div>
+                <div class="col-6">
+                    <form class="w-75">
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form4Example1" class="form-control" placeholder="NAME" />
+                          
+                        </div>
+                      
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form4Example2" class="form-control" placeholder="EMAIL" />
+                          
+                        </div>
+                      
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                          <textarea class="form-control" id="form4Example3" rows="4" placeholder="MESSAGE"></textarea>
+                         
+                        </div>
+                      
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input tick" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                            <label class="form-check-label px-4 lbl" for="flexCheckChecked">
+                                Please tick to agree to be contacted.
+                            </label>
+                          </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn4 btn-primary btn-block mb-4">Send</button>
+                      </form>
+                </div>
+               </div>                
+
+           </div> 
+        </div>
+    </section>
+
+
+
+    <section style="margin-top: 100px;">
+        <div class="container">
+            <div class="chalk row">
+                <div class="card" style="width: 18rem; margin-top: 100px; border-radius: 15px; box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);">
+                    <div class="card-body">
+                      <h5 class="card-title">Site Resources</h5>
+                    <ul class="p-1">
+                        <li><a class="category1" href="http://">About Us</a></li>
+                        <li><a class="category1" href="http://">Disclaimers</a></li>
+                        <li><a class="category1" href="http://">Terms Of Use</a></li>
+                        <li><a class="category1" href="http://">Privacy Policy</a></li>
+                        <li><a class="category1" href="http://">Contact Us</a></li>
+                        <li><a class="category1" href="http://">Visit Petblogish</a></li>
+                    </ul>
+                    </div>
+                  </div>
+
+                  
+                    
+                  
+        
+                          <div class="card" style="width: 18rem;margin-bottom: 35px; margin-top: 60px; border-radius: 15px; box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);">
+                            <div class="card-body">
+                              <h5 class="card-title">Category Cloud</h5>
+                                <a class="category" href="" style=" font-size: 12px;">Cat</a>
+                                <a class="category" href="" style="  font-size: 18px;">Dog Behavior</a>
+                                <a class="category" href="" style=" font-size: 18px;">Dog Breeds & Personality</a>
+                                <a class="category" href="" style=" font-size: 32px;">Dog Care</a>
+                                <a class="category" href="" style=" font-size: 32px;">Dog Life</a>
+                                <a class="category" href="" style=" font-size: 18px;">Dog Training Nutrition and Health Care</a>
+                                <a class="category" href="" style=" font-size: 14px;">Puppies</a>
+                                <a class="category" href="" style=" font-size: 14px;">Social Impact</a>
+                                <a class="category" href="" style=" font-size: 14px;">Uncategorized</a>
+                            </div>
+                          </div> 
+                    
+                  
+
+                  <div class="card col-lg-4" style="width: 25rem; margin-top: 100px; border-radius: 15px; box-shadow: 0px 10px 20px 0px rgb(62 148 180 / 10);">
+                    <div class="card-body">
+                      
+                    <ul class="p-1">
+                        <li><a href="http://">Ways To Make Your Dog Comfortable Alone In Your Home</a></li>
+                        <li><a href="http://">Can Dogs Eat Pineapple?</a></li>
+                        <li><a href="http://">Does Pet Insurance Cover Parvo?</a></li>
+                        <li><a href="http://">Important Supplies to Get For Your New Puppy</a></li>
+                        <li><a href="http://">Reasons You Need a Puppy in Your Life</a></li>
+                        
+                    </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center text-white w-100" style="margin-top: 300px;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn  btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn  btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn  btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn  btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn  btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn t btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="#">IOSFullstack.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
